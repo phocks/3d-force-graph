@@ -792,7 +792,14 @@
     "@babel/types" "^7.4.4"
     esutils "^2.0.2"
 
-"@babel/runtime@^7.12.5", "@babel/runtime@^7.8.4":
+"@babel/runtime@^7.14.0":
+  version "7.14.0"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.14.0.tgz#46794bc20b612c5f75e62dd071e24dfd95f1cbe6"
+  integrity sha512-JELkvo/DlpNdJ7dlyw/eY7E0suy5i5GQH+Vlxaq1nsNJ+H7f4Vtv3jMeCEgRhZZQFXTjldYfQgv2qmM6M1v5wA==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
+"@babel/runtime@^7.8.4":
   version "7.13.17"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.13.17.tgz#8966d1fc9593bf848602f0662d6b4d0069e3a7ec"
   integrity sha512-NCdgJEelPTSh+FEFylhnP1ylq848l1z9t9N0j1Lfbcw0+KXGjsTvUmkxy+voLLXB5SOKMbLLx4jxYliGrYQseA==
@@ -1420,7 +1427,7 @@ data-joint@^1.2.3:
   dependencies:
     index-array-by "^1.3.0"
 
-debounce@^1.2.0:
+debounce@^1.2.0, debounce@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/debounce/-/debounce-1.2.1.tgz#38881d8f4166a5c5848020c11827b834bcb3e0a5"
   integrity sha512-XRRe6Glud4rd/ZGQfiV1ruXSfbvfJedlV9Y6zOlP+2K04vBYiJEte6stfFkCP03aMnY5tsipamumUjL14fofug==
@@ -1909,6 +1916,13 @@ kapsule@^1.13.3:
   dependencies:
     debounce "^1.2.0"
 
+kapsule@^1.13.4:
+  version "1.13.4"
+  resolved "https://registry.yarnpkg.com/kapsule/-/kapsule-1.13.4.tgz#0fe37264556d9b222c39e849eb48ca8766fcf0c9"
+  integrity sha512-WZz+NTLKrnAfOkWw+o94HdlO+6QqBretdr8EcNSRVxFPxxyOnnBdpoczwZxYzGZqLJDCJJm9P0gRyds+FT+UDA==
+  dependencies:
+    debounce "^1.2.1"
+
 lines-and-columns@^1.1.6:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
@@ -2158,12 +2172,12 @@ pify@^5.0.0:
   resolved "https://registry.yarnpkg.com/pify/-/pify-5.0.0.tgz#1f5eca3f5e87ebec28cc6d54a0e4aaf00acc127f"
   integrity sha512-eW/gHNMlxdSP6dmG6uJip6FXN0EQBwm2clYYd8Wul42Cwu/DK8HEftzsapcNdYe2MfLiIwZqsDk2RDEsTE79hA==
 
-polished@^4.1.1:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/polished/-/polished-4.1.1.tgz#40442cc973348e466f2918cdf647531bb6c29bfb"
-  integrity sha512-4MZTrfPMPRLD7ac8b+2JZxei58zw6N1hFkdBDERif5Tlj19y3vPoPusrLG+mJIlPTGnUlKw3+yWz0BazvMx1vg==
+polished@^4.1.2:
+  version "4.1.3"
+  resolved "https://registry.yarnpkg.com/polished/-/polished-4.1.3.tgz#7a3abf2972364e7d97770b827eec9a9e64002cfc"
+  integrity sha512-ocPAcVBUOryJEKe0z2KLd1l9EBa1r5mSwlKpExmrLzsnIzJo4axsoU9O2BjOTkDGDT4mZ0WFE5XKTlR3nLnZOA==
   dependencies:
-    "@babel/runtime" "^7.12.5"
+    "@babel/runtime" "^7.14.0"
 
 postcss-calc@^7.0.1:
   version "7.0.5"
@@ -2845,15 +2859,15 @@ three-forcegraph@^1.37.5:
     ngraph.graph "^19.1.0"
     tinycolor2 "^1.4.2"
 
-three-render-objects@^1.26.0:
-  version "1.26.0"
-  resolved "https://registry.yarnpkg.com/three-render-objects/-/three-render-objects-1.26.0.tgz#6dbabc6dce12e7f6759bf4535a3e1e83f0aafbb5"
-  integrity sha512-NiWGRrAUhIvSCv9UgQ26AHWagkEQM56xXpuE4EFMWIDkCuGNKPSQfhuf1fcyi33Rey4g+X8JYEMMIqr0baG/NQ==
+three-render-objects@^1.26.2:
+  version "1.26.3"
+  resolved "https://registry.yarnpkg.com/three-render-objects/-/three-render-objects-1.26.3.tgz#2035089a101d50739d16431ab6d809eb985a8ae9"
+  integrity sha512-gDlfkzlsJoXRGiRoRBtm/rl/FJYdWQqZlE1ktanj2zYuVPWJ8+Xm3ocoJJYfe4yG5g9hqtIEvDdJ1f9wu4YmTg==
   dependencies:
     "@tweenjs/tween.js" "^18.6.4"
     accessor-fn "^1.3.0"
-    kapsule "^1.13.3"
-    polished "^4.1.1"
+    kapsule "^1.13.4"
+    polished "^4.1.2"
 
 three@^0.127.0:
   version "0.127.0"
